@@ -1,0 +1,45 @@
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.block 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heart 
+{
+    width: 150px;
+    height: 150px;
+    background-image: url('blackH.png'); 
+    background-size: cover;
+    transition: transform 0.2s ease-in; 
+}
+
+.heart:hover 
+{
+    animation: growAndColorize 4s forwards;
+}
+
+@keyframes growAndColorize 
+{
+    0% 
+    {
+        transform: scale(1);
+        background-image: url('blackH.png'); 
+    }
+    100% 
+    {
+        transform: scale(1.5);
+        width: 500px;
+        height: 500px;
+        background-image: url('redH.png'); 
+    }
+}
