@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.block {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    animation: slideUp 2s forwards;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture1 {
+    background-image: url('clipboard.png');
+    animation-delay: 0s;
+    margin-top:100px ;
+    margin-left: 50px;
+}
+
+.picture2 {
+    background-image: url('cup.png');
+    animation-delay: 0.5s;
+    margin-top:160px ;
+    margin-left: 170px;
+}
+
+.picture3 {
+    background-image: url('journal.png');
+    animation-delay: 1s;
+    margin-top:110px ;
+    margin-left: 300px;
+}
+
+.picture4 {
+    background-image: url('notebook.png');
+    animation-delay: 1.5s;
+    margin-top:140px ;
+    margin-left: 420px;
+}
+
+.picture5 {
+    background-image: url('stationery.png');
+    animation-delay: 2s;
+    margin-top:80px ;
+    margin-left: 540px;
+}
+
+@keyframes slideUp {
+    0% {
+        top: 600px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
